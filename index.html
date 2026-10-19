@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>adidas | corrida</title>
+  <link rel="stylesheet" href="style.css?v=24">
+</head>
+<body>
+
+  <header>
+    <div class="topo">
+      <a class="logo" href="#inicio">
+        <span class="marca">
+          <img class="boneco boneco-esquerdo" src="imagens/lucas-encostado.png?v=3" alt="Lucas encostado no símbolo">
+          <img class="simbolo" src="imagens/simbolo-adidas.png?v=2" alt="símbolo adidas">
+          <img class="boneco boneco-direito" src="imagens/francielio-joinha.png?v=3" alt="Franciélio dando joinha">
+        </span>
+      </a>
+      <a class="nome-topo" href="#inicio">adidas</a>
+    </div>
+  </header>
+
+  <section class="banner" id="inicio">
+    <img src="imagens/lucas-francielio.jpg" alt="Lucas e Franciélio">
+  </section>
+  <p class="acao-banner"><a class="botao" href="#produtos">ver tênis</a></p>
+
+  <section class="bloco" id="produtos">
+    <h2 class="titulo">nossos tênis</h2>
+
+    <div class="filtros">
+      <button type="button" class="filtro ativo" data-tipo="todos">todos</button>
+      <button type="button" class="filtro" data-tipo="corrida">corrida</button>
+      <button type="button" class="filtro" data-tipo="street">street</button>
+      <button type="button" class="filtro" data-tipo="casual">casual</button>
+    </div>
+    <p id="aviso"></p>
+
+    <div class="lista grade">
+      <h2 class="secao titulo" data-tipo="casual">Casual</h2>
+
+      <article class="card item peca" data-tipo="casual">
+        <img class="foto" src="imagens/lucas-gazelle.jpg" alt="Lucas usando o gazelle">
+        <h3 class="nome">Gazelle</h3>
+        <p class="nota">azul, sola de goma</p>
+      </article>
+
+      <article class="card item peca" data-tipo="casual">
+        <img class="foto" src="imagens/francielio-spezial.jpg" alt="Franciélio usando o handball spezial">
+        <h3 class="nome">Handball Spezial</h3>
+        <p class="nota">marinho, faixa azul claro</p>
+      </article>
+
+      <article class="card item peca" data-tipo="casual">
+        <img class="foto" src="imagens/lucas-stansmith.jpg" alt="Lucas usando o stan smith">
+        <h3 class="nome">Stan Smith</h3>
+        <p class="nota">branco, detalhe verde</p>
+      </article>
+
+      <article class="card item peca" data-tipo="casual">
+        <img class="foto" src="imagens/francielio-superstar.jpg" alt="Franciélio usando o superstar">
+        <h3 class="nome">Superstar</h3>
+        <p class="nota">branco, com cadarço</p>
+      </article>
+
+      <article class="card item peca" data-tipo="casual">
+        <img class="foto" src="imagens/francielio-slip.jpg" alt="Franciélio usando o slip on">
+        <h3 class="nome">Superstar Slip-On</h3>
+        <p class="nota">preto, sem cadarço</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="grupo" data-tipo="corrida">
+      <h2 class="titulo">Corrida</h2>
+      <div class="fotos grade">
+        <figure class="item peca" data-tipo="corrida">
+          <img class="foto" src="imagens/francielio-adizero.jpg" alt="Franciélio usando o adizero">
+          <figcaption class="nome">Adizero Evo SL</figcaption>
+          <p class="nota">branco, leve pra corrida</p>
+        </figure>
+        <figure class="item peca" data-tipo="corrida">
+          <img class="foto" src="imagens/lucas-supernova.jpg" alt="Lucas usando o supernova">
+          <figcaption class="nome">Adizero Evo SL</figcaption>
+          <p class="nota">azul, com faixa prata</p>
+        </figure>
+        <figure class="item peca" data-tipo="corrida">
+          <img class="foto" src="imagens/francielio-duramo.jpg" alt="Franciélio usando o duramo">
+          <figcaption class="nome">Duramo SL</figcaption>
+          <p class="nota">coral, sola alta</p>
+        </figure>
+        <figure class="item peca" data-tipo="corrida">
+          <img class="foto" src="imagens/lucas-preto.jpg" alt="Lucas usando o tenis preto">
+          <figcaption class="nome">Galaxy 6</figcaption>
+          <p class="nota">preto, três faixas brancas</p>
+        </figure>
+        <figure class="item peca" data-tipo="corrida">
+          <img class="foto" src="imagens/lucas-bege.jpg" alt="Lucas usando o tenis bege">
+          <figcaption class="nome">Supernova Rise</figcaption>
+          <p class="nota">bege, pra corrida</p>
+        </figure>
+      </div>
+    </div>
+
+    <div class="grupo" data-tipo="street">
+      <h2 class="titulo">Street</h2>
+      <div class="fotos grade">
+        <figure class="item peca" data-tipo="street">
+          <img class="foto" src="imagens/francielio-samba.jpg" alt="Franciélio usando o samba">
+          <figcaption class="nome">Samba</figcaption>
+          <p class="nota">verde, sola de goma</p>
+        </figure>
+        <figure class="item peca" data-tipo="street">
+          <img class="foto" src="imagens/lucas-forum.jpg" alt="Lucas usando o forum">
+          <figcaption class="nome">Forum Low</figcaption>
+          <p class="nota">branco, cano baixo</p>
+        </figure>
+        <figure class="item peca" data-tipo="street">
+          <img class="foto" src="imagens/lucas-barreda.jpg" alt="Lucas usando o barreda decode">
+          <figcaption class="nome">Barreda Decode</figcaption>
+          <p class="nota">cinza, sola grossa</p>
+        </figure>
+        <figure class="item peca" data-tipo="street">
+          <img class="foto" src="imagens/francielio-sl72.jpg" alt="Franciélio usando o sl 72">
+          <figcaption class="nome">SL 72</figcaption>
+          <p class="nota">azul, sola vermelha</p>
+        </figure>
+        <figure class="item peca" data-tipo="street">
+          <img class="foto" src="imagens/lucas-ozweego.jpg" alt="Lucas usando o ozweego">
+          <figcaption class="nome">Ozweego</figcaption>
+          <p class="nota">cinza, sola grossa</p>
+        </figure>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="script.js?v=14"></script>
+
+  <footer>
+    <span class="marca">
+      <img class="boneco boneco-esquerdo" src="imagens/lucas-encostado.png?v=3" alt="Lucas encostado no símbolo">
+      <img class="simbolo" src="imagens/simbolo-adidas.png?v=2" alt="símbolo adidas">
+      <img class="boneco boneco-direito" src="imagens/francielio-joinha.png?v=3" alt="Franciélio dando joinha">
+    </span>
+    <p class="nome-adidas">adidas</p>
+    <p class="linha">desenvolvido por Lucas Machado e Franciélio Sousa</p>
+    <div class="contatos">
+      <p class="linha">contatos</p>
+      <div class="rede">
+        <a class="contato" href="https://wa.me/5547991237932" target="_blank" rel="noopener">
+          <img class="icone" src="imagens/whatsapp.svg?v=1" alt="" width="26" height="26">
+          <span>Lucas 47 99123-7932</span>
+        </a>
+        <a class="contato" href="https://instagram.com/lucasde_oliveira_" target="_blank" rel="noopener">
+          <img class="icone" src="imagens/instagram.svg?v=2" alt="" width="26" height="26">
+          <span>@lucasde_oliveira_</span>
+        </a>
+        <a class="contato" href="https://wa.me/5544997418890" target="_blank" rel="noopener">
+          <img class="icone" src="imagens/whatsapp.svg?v=1" alt="" width="26" height="26">
+          <span>Franciélio 44 99741-8890</span>
+        </a>
+        <a class="contato" href="https://instagram.com/franccisousa" target="_blank" rel="noopener">
+          <img class="icone" src="imagens/instagram.svg?v=2" alt="" width="26" height="26">
+          <span>@franccisousa</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

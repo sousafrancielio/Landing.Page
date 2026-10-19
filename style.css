@@ -1,0 +1,179 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.topo {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 14px 36px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo { justify-self: start; }
+
+.nome-topo, .nome-adidas {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.nome-topo {
+  justify-self: center;
+  font-size: 38px;
+  letter-spacing: -1px;
+}
+
+.marca { display: flex; align-items: flex-end; }
+
+.simbolo, .boneco, .banner img, .foto { display: block; height: auto; }
+.simbolo { height: 54px; width: auto; margin: 0 0 14px; }
+.boneco { height: 108px; width: auto; }
+.boneco-esquerdo { margin-right: -16px; }
+.boneco-direito { margin-left: -22px; }
+.banner img { width: 100%; }
+
+.acao-banner { text-align: center; padding: 16px; }
+
+.botao {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 14px 26px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 3px solid #000;
+}
+
+.botao:hover { background: #fff; color: #000; }
+
+.bloco { padding: 40px 36px; }
+.bloco + .bloco { padding-top: 0; }
+#produtos:not(:has(.peca:not(.escondido))) { padding-bottom: 0; }
+
+.titulo, .nome {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.titulo { font-size: 36px; margin-bottom: 14px; }
+.secao { flex: 1 1 100%; margin-bottom: 0; }
+.filtros { margin-bottom: 14px; }
+
+.filtro {
+  background: #fff;
+  border: 1px solid #111;
+  padding: 8px 12px;
+  margin: 4px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.filtro.ativo { background: #000; color: #fff; }
+.item.marcado { outline: 3px solid #000; }
+.escondido { display: none !important; }
+
+#aviso { margin: 8px 0 16px; font-weight: bold; min-height: 20px; }
+
+.grade { display: flex; flex-wrap: wrap; gap: 16px; }
+.peca { flex: 1 1 30%; text-align: center; }
+
+.card {
+  background: #f3f3f3;
+  padding: 12px 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid transparent;
+}
+
+.card:hover { border-color: #000; }
+
+.foto { width: 100%; aspect-ratio: 1 / 1; object-fit: contain; }
+
+.nome {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 22px;
+  border-bottom: 3px solid #111;
+  padding-bottom: 4px;
+}
+
+.nota { margin-top: 8px; font-size: 13px; font-style: italic; }
+.grupo { margin-top: 28px; }
+.grupo:first-child,
+.grupo.escondido + .grupo { margin-top: 0; }
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 24px;
+}
+
+footer .marca { justify-content: center; margin-bottom: 8px; }
+footer .simbolo { filter: invert(1); }
+.nome-adidas { margin: 0 0 8px; font-size: 22px; }
+
+.linha {
+  margin: 4px 0;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.rede {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 36px;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.icone { width: 26px; height: 26px; flex: 0 0 auto; }
+
+@media (max-width: 800px) {
+  .topo {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .logo, .nome-topo { justify-self: center; }
+  .grade { flex-direction: column; }
+  .bloco { padding: 28px 16px; }
+  .bloco + .bloco { padding-top: 0; }
+  .boneco { height: 58px; }
+  .simbolo { height: 34px; }
+}
